@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">نبض</string>
+    <string name="search_hint">ابحث أو أدخل رابط...</string>
+    <string name="new_tab">تبويب جديد</string>
+    <string name="close_tab">إغلاق التبويب</string>
+    <string name="bookmarks">المفضلة</string>
+    <string name="history">السجل</string>
+    <string name="downloads">التنزيلات</string>
+    <string name="settings">الإعدادات</string>
+    <string name="back">رجوع</string>
+    <string name="forward">تقدم</string>
+    <string name="reload">تحديث</string>
+    <string name="stop">إيقاف</string>
+    <string name="share">مشاركة</string>
+    <string name="add_bookmark">إضافة للمفضلة</string>
+    <string name="remove_bookmark">إزالة من المفضلة</string>
+    <string name="clear_history">مسح السجل</string>
+    <string name="clear_downloads">مسح التنزيلات</string>
+    <string name="home">الرئيسية</string>
+    <string name="no_bookmarks">لا توجد مفضلات</string>
+    <string name="no_history">السجل فارغ</string>
+    <string name="no_downloads">لا توجد تنزيلات</string>
+    <string name="loading">جاري التحميل...</string>
+    <string name="error_loading">خطأ في تحميل الصفحة</string>
+    <string name="download_started">بدأ التنزيل</string>
+    <string name="download_complete">اكتمل التنزيل</string>
+    <string name="incognito_mode">وضع التصفح الخاص</string>
+</resources>

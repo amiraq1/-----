@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors - نظام ألوان نبض -->
+    <color name="nabd_primary">#6366F1</color>
+    <color name="nabd_primary_dark">#4F46E5</color>
+    <color name="nabd_primary_light">#818CF8</color>
+    
+    <!-- Secondary Colors -->
+    <color name="nabd_secondary">#EC4899</color>
+    <color name="nabd_secondary_dark">#DB2777</color>
+    
+    <!-- Accent Colors -->
+    <color name="nabd_accent">#14B8A6</color>
+    <color name="nabd_accent_dark">#0D9488</color>
+    
+    <!-- Background Colors -->
+    <color name="nabd_background_light">#FAFAFA</color>
+    <color name="nabd_background_dark">#0F172A</color>
+    <color name="nabd_surface_light">#FFFFFF</color>
+    <color name="nabd_surface_dark">#1E293B</color>
+    
+    <!-- Text Colors -->
+    <color name="nabd_text_light">#1F2937</color>
+    <color name="nabd_text_dark">#F1F5F9</color>
+    <color name="nabd_text_secondary_light">#6B7280</color>
+    <color name="nabd_text_secondary_dark">#94A3B8</color>
+    
+    <!-- UI Elements -->
+    <color name="nabd_toolbar">#FFFFFF</color>
+    <color name="nabd_toolbar_dark">#1E293B</color>
+    <color name="nabd_tab_indicator">#6366F1</color>
+    <color name="nabd_divider">#E5E7EB</color>
+    <color name="nabd_divider_dark">#334155</color>
+    
+    <!-- Status Colors -->
+    <color name="nabd_success">#10B981</color>
+    <color name="nabd_warning">#F59E0B</color>
+    <color name="nabd_error">#EF4444</color>
+    
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#6366F1</color>
+    <color name="gradient_end">#EC4899</color>
+</resources>

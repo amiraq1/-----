@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NabdBrowser" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/nabd_primary</item>
+        <item name="android:navigationBarColor">@color/nabd_surface_light</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/nabd_background_light</item>
+    </style>
+    
+    <style name="Theme.NabdBrowser.Dark" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@color/nabd_background_dark</item>
+        <item name="android:navigationBarColor">@color/nabd_surface_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/nabd_background_dark</item>
+    </style>
+</resources>
