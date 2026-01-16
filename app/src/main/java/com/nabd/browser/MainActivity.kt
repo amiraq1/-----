@@ -76,6 +76,37 @@ class MainActivity : ComponentActivity() {
         super.onPause()
         viewModel.getWebViewForCurrentTab()?.onPause()
     }
+
+    override fun onKeyUp(keyCode: Int, event: android.view.KeyEvent?): Boolean {
+        if (event?.isCtrlPressed == true) {
+            when (keyCode) {
+                // Ctrl + T: تبويب جديد
+                android.view.KeyEvent.KEYCODE_T -> {
+                    viewModel.createNewTab()
+                    return true
+                }
+                // Ctrl + W: إغلاق التبويب
+                android.view.KeyEvent.KEYCODE_W -> {
+                    viewModel.state.value.currentTab?.let { viewModel.closeTab(it.id) }
+                    return true
+                }
+                // Ctrl + R: تحديث
+                android.view.KeyEvent.KEYCODE_R -> {
+                    viewModel.reload()
+                    return true
+                }
+                // Ctrl + L: تركيز شريط العنوان (يتطلب منطق إضافي في UI)
+                // Ctrl + Shift + N: تصفح خاص
+                android.view.KeyEvent.KEYCODE_N -> {
+                    if (event.isShiftPressed) {
+                        viewModel.createNewTab(isIncognito = true)
+                        return true
+                    }
+                }
+            }
+        }
+        return super.onKeyUp(keyCode, event)
+    }
 }
 
 /**

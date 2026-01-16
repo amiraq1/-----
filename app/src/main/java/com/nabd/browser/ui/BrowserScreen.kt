@@ -184,15 +184,25 @@ fun BrowserContent(
             isLoading = currentTab.isLoading
         )
         
-        // WebView
+        // المحتوى الرئيسي (WebView أو الصفحة الرئيسية)
         Box(modifier = Modifier.weight(1f)) {
-            WebViewContainer(
-                tabId = currentTab.id,
-                initialUrl = currentTab.url,
-                viewModel = viewModel,
-                isIncognito = currentTab.isIncognito,
-                isDesktopMode = state.isDesktopMode
-            )
+            val mostVisited by viewModel.mostVisited.collectAsState(initial = emptyList())
+            
+            if (currentTab.url.isEmpty()) {
+                HomeScreen(
+                    mostVisited = mostVisited,
+                    onSearch = { viewModel.loadUrl(it) },
+                    onSiteClick = { viewModel.loadUrl(it) }
+                )
+            } else {
+                WebViewContainer(
+                    tabId = currentTab.id,
+                    initialUrl = currentTab.url,
+                    viewModel = viewModel,
+                    isIncognito = currentTab.isIncognito,
+                    isDesktopMode = state.isDesktopMode
+                )
+            }
             
             // طبقة Incognito
             if (currentTab.isIncognito) {
